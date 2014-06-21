@@ -111,6 +111,8 @@ ForgotPassword.prototype.postForgot = function(req, res, next) {
     return;
   }
 
+  email = email.toLowerCase();
+
   // looks like given email address has the correct format
 
   // look for user in db
